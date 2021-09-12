@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuiteReqRes" time="13.395" tests="15" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/marcelo/Documents/Desafio DBC/teste-api-reqres-getnet/target/test-classes:/Users/marcelo/Documents/Desafio DBC/teste-api-reqres-getnet/target/classes:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/marcelo/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/marcelo/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/marcelo/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/marcelo/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/marcelo/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/marcelo/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/marcelo/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/marcelo/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/marcelo/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/marcelo/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/marcelo/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/marcelo/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/marcelo/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/marcelo/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/marcelo/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/marcelo/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/marcelo/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/marcelo/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/marcelo/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/marcelo/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/marcelo/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/marcelo/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/marcelo/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/marcelo/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/marcelo/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/marcelo/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/marcelo/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/marcelo/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/marcelo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/Users/marcelo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/marcelo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/Users/marcelo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-runner/1.8.0-M1/junit-platform-runner-1.8.0-M1.jar:/Users/marcelo/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/marcelo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.0-M1/junit-platform-launcher-1.8.0-M1.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-suite-api/1.8.0-M1/junit-platform-suite-api-1.8.0-M1.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.8.0-M1/junit-platform-suite-commons-1.8.0-M1.jar:/Users/marcelo/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/marcelo/.m2/repository/org/json/json/20210307/json-20210307.jar:"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/marcelo/Documents/Desafio DBC/teste-api-reqres-getnet/target/surefire/surefirebooter4482859508957057446.jar /Users/marcelo/Documents/Desafio DBC/teste-api-reqres-getnet/target/surefire 2021-09-12T19-20-03_100-jvmRun1 surefire2107962235571636471tmp surefire_012494635854421068168tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/marcelo/Documents/Desafio DBC/teste-api-reqres-getnet/target/test-classes:/Users/marcelo/Documents/Desafio DBC/teste-api-reqres-getnet/target/classes:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/marcelo/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/marcelo/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/marcelo/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/marcelo/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/marcelo/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/marcelo/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/marcelo/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/marcelo/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/marcelo/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/marcelo/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/marcelo/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/marcelo/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/marcelo/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/marcelo/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/marcelo/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/marcelo/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/marcelo/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/marcelo/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/marcelo/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/marcelo/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/marcelo/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/marcelo/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/marcelo/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/marcelo/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/marcelo/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/marcelo/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/marcelo/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/marcelo/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/marcelo/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/marcelo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/Users/marcelo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/marcelo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/Users/marcelo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-runner/1.8.0-M1/junit-platform-runner-1.8.0-M1.jar:/Users/marcelo/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/marcelo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.0-M1/junit-platform-launcher-1.8.0-M1.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-suite-api/1.8.0-M1/junit-platform-suite-api-1.8.0-M1.jar:/Users/marcelo/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.8.0-M1/junit-platform-suite-commons-1.8.0-M1.jar:/Users/marcelo/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/marcelo/.m2/repository/org/json/json/20210307/json-20210307.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/marcelo"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/marcelo/Documents/Desafio DBC/teste-api-reqres-getnet"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/marcelo/Documents/Desafio DBC/teste-api-reqres-getnet/target/surefire/surefirebooter4482859508957057446.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.11+9"/>
+    <property name="user.name" value="marcelo"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK-11.0.11+9"/>
+    <property name="localRepository" value="/Users/marcelo/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/hb/jzxmqfpj5rqddzyx1wx06yc40000gn/T/"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="user.dir" value="/Users/marcelo/Documents/Desafio DBC/teste-api-reqres-getnet"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/marcelo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="11.0.11+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="testUpdateUserStatus200()" classname="TestPut" time="1.963">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 12 Sep 2021 22:20:07 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"58-RXs6/BeodCSqPt9iDMIg5ZU+tgo"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=277KN9QSHPAxAtbyqCSIRJpkSmX54G3gY6DbjyRbRFEEcpTbR%2FlrJF2AB1bWL0FCEBWcHKNTQ%2BdCoOvcpOC8r%2BAO10DkW%2BFnLIPkDR%2BLZDicPQT6JVdyZY%2FWS3o%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 68dc85724c4df72c-GRU
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "Candidato Número: 9",
+    "job": "QA Matrix",
+    "updatedAt": "2021-09-12T22:20:07.732Z"
+}
+Teste UPDATE Com PUT Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteUserStatus204()" classname="TestDelete" time="0.657">
+    <system-out><![CDATA[HTTP/1.1 204 No Content
+Date: Sun, 12 Sep 2021 22:20:08 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=j%2FGblvhd5dvZkmzBPZ5wb4OFi%2FikFulJgmWx%2FWmKwQE1zdwDeAuKHeMltlDe1yeVe5TeqHVRAwMTERefG0lMXW%2Bh6tPFuHqJU3723b2H3b6MomaU5Rq6GTy361c%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 68dc85776a29520b-GRU
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+Teste DELETE Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testeSingleResourceStatus200()" classname="TestGet" time="0.267">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 12 Sep 2021 22:20:08 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"e8-ov4wWh4/OY1IMQMqWgskYtOFnVs"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 3535
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WoEzlxI3H4YPFBqvNqhMXFEEEFk8griG%2Bjw43x%2FECldCIeVbyOWejKuay3lNJBQWfMekEqqKMiOhOexnl7Tcnk18j3Uldhpfh%2F8v4Pwu%2BvCrhcFQccxYrJUg6Mc%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 68dc857bad84f744-GRU
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "data": {
+        "id": 2,
+        "name": "fuchsia rose",
+        "year": 2001,
+        "color": "#C74375",
+        "pantone_value": "17-2031"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+Teste SINGLE RESOURCE Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testeListResourceStatus200()" classname="TestGet" time="0.241">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 12 Sep 2021 22:20:09 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 3559
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FW6SBPenFtPOLA9WzGW5f72D9vwJyTu5EtE1%2BjwAJsUHSEWkCA23cImmGDBnhEJBdIEWffXJi0MgOvDPf0xwyycSe21mpxBOEOCFBYtoSZBR%2BY29rTzdBjbUiwY%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 68dc857d1c3451ba-GRU
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "name": "cerulean",
+            "year": 2000,
+            "color": "#98B2D1",
+            "pantone_value": "15-4020"
+        },
+        {
+            "id": 2,
+            "name": "fuchsia rose",
+            "year": 2001,
+            "color": "#C74375",
+            "pantone_value": "17-2031"
+        },
+        {
+            "id": 3,
+            "name": "true red",
+            "year": 2002,
+            "color": "#BF1932",
+            "pantone_value": "19-1664"
+        },
+        {
+            "id": 4,
+            "name": "aqua sky",
+            "year": 2003,
+            "color": "#7BC4C4",
+            "pantone_value": "14-4811"
+        },
+        {
+            "id": 5,
+            "name": "tigerlily",
+            "year": 2004,
+            "color": "#E2583E",
+            "pantone_value": "17-1456"
+        },
+        {
+            "id": 6,
+            "name": "blue turquoise",
+            "year": 2005,
+            "color": "#53B0AE",
+            "pantone_value": "15-5217"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+Teste LIST RESOURCE Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testeSingleResourceNotFoundStatus404()" classname="TestGet" time="0.204">
+    <system-out><![CDATA[HTTP/1.1 404 Not Found
+Date: Sun, 12 Sep 2021 22:20:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 38
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HhZwLesHLAMiNK5ItDkCuyD2na%2Fut3lsoGYD1W714fqDO6Un6rBRBhQHid4lQK%2Fx0iyrnTcLfgSpU8jecTbOqasPuC4QtvbwjWs0daSM3WYivzCblEPoIPFkz2c%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 68dc857e7c114b3a-GRU
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    
+}
+Teste SINGLE RESOURCE NOT FOUND Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testeSingleUserStatus200()" classname="TestGet" time="0.247">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 12 Sep 2021 22:20:09 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 3555
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sWU9cccCnKL7nOCnuBMUBgFmet96CeGmmQONE0t814cbWWov0ZO3tofefyfTfz0r0Kmb5U%2BDbEK%2BDvEfsb4BRWI2ulwGqmY%2F7uiQNuK0RiedXElBvt3EqsYcmjs%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 68dc857fe81b4b29-GRU
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+Teste SINGLE USER Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testeSingleUserNotFoundStatus404()" classname="TestGet" time="0.213">
+    <system-out><![CDATA[HTTP/1.1 404 Not Found
+Date: Sun, 12 Sep 2021 22:20:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 37
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gi4fGaA158hC6Uep8PsI701nFKnF9KvBgHOJ9RRxSVKNy9sCtgP8N6WQQefDqK8ilk9%2FdhsPvBJMGPSZ024Rnkdua1UAwWO2yTQKw6cSgHAu093lcX%2Fg%2BPoX8lQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 68dc8581599b4d09-GRU
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    
+}
+Teste SINGLE USER NOT FOUND Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testeListUsersStatus200()" classname="TestGet" time="0.269">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 12 Sep 2021 22:20:10 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 632
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nEL2iJI97mY0Vt6%2FmQHJHyUgI68upICtmQer3NMDz%2FFoEDQ5SuwLk2xmxXmg39QNLkCPrsMhhW4XFajE1RUlQ49asy%2BzDTCbYgXo3fRg0HvlorfPhOrnbrZSuSo%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 68dc8582eafff3af-GRU
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+Teste LIST USERS Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testeDelayedStatus200()" classname="TestGet" time="3.677">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 12 Sep 2021 22:20:13 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2B8V3Wfb%2BOySXre4Tht31B%2Bg8eN4DmDxAg3EPTHT%2BdY2OM90iHjsq9rm4E8CZXopLnlMMeNbO1JUDjcbeRQ7pTZCzppno3bCtWYg4NdX0O9cZtCBZ2n8o08Am9kc%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 68dc85843ef0f67b-GRU
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+Teste DELAYED Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateUserPatchStatus200()" classname="TestPatch" time="0.695">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 12 Sep 2021 22:20:14 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"5f-1BUo207gYKXhG56ncvizU5MUyDM"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kFJRfKPcjHgRTiXQQU28QzBijs1LcSsofIhJbdgmgRIZi%2Bd%2Bl7DWtNn6Nz1rj8nR9DyLJqn4sWlbGyg83CMCri%2Fy2y9O8EaYuGkIdi1tDQT56Gg3IALINH76YmI%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 68dc859b6bd7f663-GRU
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": [
+        "Candidato Número: 12"
+    ],
+    "job": "QA Specialist",
+    "updatedAt": "2021-09-12T22:20:14.344Z"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterSuccessfulStatus200()" classname="TestPost" time="0.672">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 12 Sep 2021 22:20:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=aG7YR0JcAfvEf2bVWS9oVveCpvtb0SEECgJhQCMG78b3nMrCHvG4l7xv7d0uY8Z29qdbOGndBRxyYqhlJYNbbQ7D25hcnJJdnBdkUBPC%2FDLIzEEQjprJOQhDT4U%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 68dc859fce1f4b35-GRU
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+Teste REGISTER SUCCESSFUL Com POST Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginUnSuccessfulStatus400()" classname="TestPost" time="0.771">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Date: Sun, 12 Sep 2021 22:20:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=19wi0b9J3w2RgIHhbEScF6VsYLr%2BSAqhhMNr05xuKgWminqSJ1iUxkBgQrE0QUzhr04sGU3yeWBlPiClbsQYXDW430PGsBtVcrK9HANe3QJ7aOU6WuG0ZR%2F3aa8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 68dc85a3ebabf718-GRU
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Missing password"
+}
+Teste LOGN UNSUCCESSFUL Com POST Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterUnSuccessfulStatus400()" classname="TestPost" time="0.712">
+    <system-out><![CDATA[HTTP/1.1 400 Bad Request
+Date: Sun, 12 Sep 2021 22:20:16 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FqC%2FzQn1zIvOhdnET18G9bHjEdBpNzEFQDAtetCTNBwWSkqrEabYTkkiBUxx9FL7K1nhGESGCtjyBM%2FlQcvzPntN8VHpgpPb7i8JJR5PTk34Hxo08uJSMQBl67s%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 68dc85a8dc43eee6-GRU
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Missing password"
+}
+Teste REGISTER UNSUCCESSFUL Com POST Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateStatus201()" classname="TestPost" time="0.673">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Date: Sun, 12 Sep 2021 22:20:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 97
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"61-eTN88ndnukJi3ukWsGPKD0F3eT8"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=reBvRILCDV0tLRDaBQXJehKaZc2sWBVzc6Ebac4Qh79oH2ZnhK%2FKXX%2BDHKMkhRpFiQd2Ytog3nzZH1veTvHJWzFcqOANQlSNz5RybJ93Kprr7Ng%2F6hPFkdmmZIw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 68dc85ad4b4dd01c-GRU
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": [
+        "Candidato Número: 16"
+    ],
+    "job": [
+        "QA"
+    ],
+    "id": "179",
+    "createdAt": "2021-09-12T22:20:17.187Z"
+}
+Teste CREATE Com POST Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginSuccessfulStatus200()" classname="TestPost" time="0.661">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 12 Sep 2021 22:20:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=deJ39fOGeDuHBqaPAoLKNo2jfsxWvcG07Si%2BItLV4J8kdQFyHCzoNku1Ak7Ts6PKFfnbdFOI20Rve3WEdjuUzVrOqWQU1xwL3LZhirm8ft0adMD9Kc4Z%2BycZVFE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 68dc85b16fe3f728-GRU
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "token": "QpwL5tke4Pnpja7X4"
+}
+Teste LOGIN SUCCESSFUL Com POST Realizado com Sucesso! 
+]]></system-out>
+  </testcase>
+</testsuite>

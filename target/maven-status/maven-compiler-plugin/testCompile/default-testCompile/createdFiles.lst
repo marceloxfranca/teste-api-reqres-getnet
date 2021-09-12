@@ -1,0 +1,15 @@
+br/com/reqres/test/TestPost.class
+br/com/reqres/core/BaseTest.class
+br/com/reqres/test/TestGet.class
+br/com/reqres/utils/DadosUtil.class
+TestSuiteReqRes.class
+br/com/reqres/test/TestDelete.class
+br/com/reqres/test/TestPatch.class
+br/com/reqres/core/Constantes.class
+br/com/reqres/model/PutModel.class
+br/com/reqres/model/PostModel.class
+br/com/reqres/model/DeleteModel.class
+br/com/reqres/model/DadosModel.class
+br/com/reqres/model/PatchModel.class
+br/com/reqres/test/TestPut.class
+br/com/reqres/model/GetModel.class
